@@ -16,13 +16,12 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0b5cad">
+<meta name="theme-color" content="#0c1829">
 <link rel="icon" href="img/ikona.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="styl.css">
-<style>
-:root { --akcent: #0b5cad; --akcent-ciemny: #08447f; --zolty: #f2b705; }
-
-</style>
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -276,7 +275,6 @@
         <h3>Monitoring fotowoltaiki i zużycia</h3>
         <ul>
           <li>odczyt danych z falownika PV bez chmury producenta</li>
-          <li>odczyt licznika przez port optyczny (DLMS / IEC 62056-21)</li>
           <li>historia produkcji, zużycia i napięć na fazach</li>
           <li>codzienne raporty PDF z analizą wysyłane mailem</li>
         </ul>
@@ -289,7 +287,7 @@
           <li>jeden panel dla alarmu, kamer, ogrzewania strefowego, klimatyzacji i oświetlenia</li>
           <li>sceny, harmonogramy i powiadomienia na telefon</li>
           <li>bezpieczny dostęp zdalny przez prywatną sieć VPN, bez otwierania portów</li>
-          <li>praca lokalna na małym serwerze (Raspberry Pi), także przy braku internetu</li>
+          <li>praca na małym lokalnym serwerze, także przy braku internetu</li>
         </ul>
       </article>
 
@@ -385,12 +383,12 @@
       <article class="realizacja realizacja-plik">
         <div>
           <span class="znacznik">Analiza zużycia energii</span>
-          <h3>Zbiorczy raport dla kilku punktów poboru</h3>
-          <p>Zestawienie faktur wielu liczników jednego podmiotu: taryfy, moce umowne, opłata mocowa i propozycje zmian z wyliczonymi kwotami, z podstawą prawną w raporcie.</p>
-          <a class="link-pdf" href="pliki/przyklad-raport-ak-zbiorczy.pdf" target="_blank" rel="noopener">Zobacz przykładowy raport zbiorczy <small>(PDF, 3 strony, dane fikcyjne)</small></a>
+          <h3>Raport dla punktu poboru</h3>
+          <p>Zestawienie faktur jednego PPE: taryfy, moce umowne, opłata mocowa i propozycje zmian z wyliczonymi kwotami, z podstawą prawną w raporcie.</p>
+          <a class="link-pdf" href="pliki/przyklad-raport-ppe.pdf" target="_blank" rel="noopener">Zobacz przykładowy raport punktu poboru <small>(PDF, 12 stron, dane odbiorcy ukryte)</small></a>
         </div>
-        <a class="miniatura" href="pliki/przyklad-raport-ak-zbiorczy.pdf" target="_blank" rel="noopener">
-          <img src="img/przyklad-ak-zbiorczy.png" alt="Pierwsza strona przykładowego raportu zbiorczego (dane fikcyjne)" loading="lazy">
+        <a class="miniatura" href="pliki/przyklad-raport-ppe.pdf" target="_blank" rel="noopener">
+          <img src="img/przyklad-raport-ppe.png" alt="Pierwsza strona raportu punktu poboru energii (dane odbiorcy ukryte)" loading="lazy">
         </a>
       </article>
 
@@ -439,9 +437,9 @@
       <div>
         <h3>Automatyka i komunikacja</h3>
         <ul>
-          <li>Raspberry Pi jako lokalny serwer obiektu</li>
+          <li>Lokalny serwer obiektu</li>
           <li>SUPLA, Satel INTEGRA (ETHM), Hikvision, TECH (eModul)</li>
-          <li>Modbus / Solarman (falowniki), DLMS/COSEM (liczniki)</li>
+          <li>Modbus / Solarman (falowniki)</li>
           <li>prywatna sieć VPN i powiadomienia push na telefon</li>
         </ul>
       </div>
@@ -449,7 +447,7 @@
         <h3>Analizy i raporty</h3>
         <ul>
           <li>dane kwadransowe i dobowe z portali operatora</li>
-          <li>własne narzędzia w Pythonie do analiz i wykresów</li>
+          <li>własne narzędzia do analiz i wykresów</li>
           <li>raporty PDF z kodem QR i podstawą prawną</li>
           <li>eksport do Excela</li>
         </ul>
@@ -466,7 +464,7 @@
       <p>Nazywam się <b>Waldemar Nowak</b>, jestem inżynierem i prowadzę Biuro Usług Technicznych „MOTOEKSA” w Nakle nad Notecią.</p>
       <p>Łączę przeglądy budynków i pomiary elektryczne z analizą danych: po kontroli zostaje czytelny protokół z oceną stanu i zaleceniami z terminami, a po odczytach – raport z liczbami, a nie tylko arkusz wyników. Rozwiązania buduję tak, żeby działały lokalnie, były tanie w utrzymaniu i nie zależały od jednej chmury producenta.</p>
       <ul class="lista-faktow">
-        <li><b>Uprawnienia:</b> świadectwa kwalifikacyjne SEP (eksploatacja i dozór) oraz uprawnienia budowlane</li>
+        <li><b>Uprawnienia:</b> świadectwa kwalifikacyjne SEP (eksploatacja i dozór) oraz uprawnienia Konstrukcyjno-Budowlane</li>
         <li><b>Świadectwa energetyczne:</b> wpisany do wykazu osób uprawnionych do sporządzania świadectw charakterystyki energetycznej (rejestr Ministerstwa Rozwoju i Technologii, nr wpisu 15255, od 2019 r.)</li>
         <li><b>Działalność:</b> firma działa od 2003 roku</li>
         <li><b>Dla kogo:</b> zarządcy nieruchomości, szkoły, obiekty sportowe, gminy i ich jednostki, wspólnoty mieszkaniowe, firmy</li>

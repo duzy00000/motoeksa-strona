@@ -54,6 +54,8 @@ h3 { font-size: 1.12rem; }
   background: var(--akcent); color: #fff; font-weight: 700; font-size: 1.3rem;
   box-shadow: inset 0 -4px 0 var(--zolty);
 }
+.logo-znak-svg { background: none; box-shadow: none; border-radius: 0; }
+.logo-znak-svg svg { display: block; width: 40px; height: 40px; }
 .menu { display: flex; gap: 4px; flex-wrap: wrap; }
 .menu a { text-decoration: none; color: var(--tekst); padding: 8px 12px; border-radius: 6px; font-size: .95rem; }
 .menu a:hover { background: var(--tlo-2); }

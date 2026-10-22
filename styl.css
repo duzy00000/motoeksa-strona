@@ -171,6 +171,23 @@ h3 { font-size: 1.12rem; }
 .o-mnie-ze-zdjeciem { display: grid; grid-template-columns: 240px 1fr; gap: 40px; align-items: start; }
 .o-mnie-zdjecie { width: 100%; border-radius: 12px; display: block; }
 .tekst-sekcji { max-width: 820px; }
+.tekst-sekcji ul { padding-left: 1.2em; }
+.tekst-sekcji li { margin-bottom: 8px; }
+.karta-link { display: inline-block; margin: 6px 0 8px; font-weight: 600; text-decoration: none; }
+.karta-link:hover { text-decoration: underline; }
+.obszar { display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: start; }
+.obszar-ikona { width: 52px; height: 52px; border-radius: 12px; display: grid; place-items: center; font-size: 1.6rem; background: #e6effa; color: var(--akcent); }
+.hero-podstrona { padding: 48px 0 44px; }
+.hero-podstrona h1 { font-size: 2.2rem; max-width: 24em; }
+.okruszki { font-size: .9rem; color: #dbe7f5; margin-bottom: 14px; }
+.okruszki a { color: #fff; }
+.faq details { background: var(--tlo); border: 1px solid var(--linia); border-radius: 10px; margin-bottom: 10px; padding: 0 16px; }
+.faq summary { cursor: pointer; font-weight: 600; padding: 12px 0; }
+.faq details p { margin: 0 0 14px; color: var(--tekst-2); }
+.inne-uslugi { display: flex; flex-wrap: wrap; gap: 10px; }
+.inne-uslugi a { text-decoration: none; padding: 10px 16px; border: 1px solid var(--linia); border-radius: 8px; font-weight: 600; background: var(--tlo); }
+.inne-uslugi a:hover { border-color: var(--akcent); }
+.stopka-uslugi a { margin-right: 2px; }
 .wycena { padding: 0 0 56px; }
 .wycena-wnetrze {
   display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
@@ -228,6 +245,8 @@ h3 { font-size: 1.12rem; }
   .menu a { padding: 6px 10px; font-size: .9rem; }
   .hero { padding: 44px 0 40px; }
   .hero h1 { font-size: 1.85rem; }
+  .hero-podstrona h1 { font-size: 1.6rem; }
+  .obszar { grid-template-columns: 1fr; }
   h2 { font-size: 1.55rem; }
   .sekcja { padding: 44px 0; }
   .karty, .realizacje { grid-template-columns: 1fr; }

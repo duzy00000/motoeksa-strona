@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Opłata mocowa i współczynnik AK – analiza kosztów energii</title>
+<meta name="description" content="Analiza faktur za prąd: dobór taryfy i mocy umownej, współczynnik AK opłaty mocowej z danych 15-minutowych, raport z możliwymi oszczędnościami.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://duzy00000.github.io/motoeksa-strona/oplata-mocowa-analiza-energii/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="MOTOEKSA">
+<meta property="og:title" content="Opłata mocowa i współczynnik AK – analiza kosztów energii">
+<meta property="og:description" content="Analiza faktur za prąd: dobór taryfy i mocy umownej, współczynnik AK opłaty mocowej z danych 15-minutowych, raport z możliwymi oszczędnościami.">
+<meta property="og:url" content="https://duzy00000.github.io/motoeksa-strona/oplata-mocowa-analiza-energii/">
+<meta property="og:image" content="https://duzy00000.github.io/motoeksa-strona/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b5cad">
+<link rel="icon" href="../img/ikona.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styl.css">
+<style>
+:root { --akcent: #0b5cad; --akcent-ciemny: #08447f; --zolty: #f2b705; }
+
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": [
+    "ProfessionalService",
+    "Electrician"
+   ],
+   "@id": "https://duzy00000.github.io/motoeksa-strona/#firma",
+   "name": "Biuro Usług Technicznych „MOTOEKSA”",
+   "alternateName": "MOTOEKSA",
+   "founder": {
+    "@type": "Person",
+    "name": "Waldemar Nowak",
+    "honorificPrefix": "inż."
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Świętego Jana Pawła II 11",
+    "postalCode": "89-100",
+    "addressLocality": "Nakło nad Notecią",
+    "addressCountry": "PL"
+   },
+   "telephone": "+48606951068",
+   "email": "motoeksa@gmail.com",
+   "taxID": "5581062412",
+   "description": "Okresowe przeglądy budynków, pomiary elektryczne, analizy zużycia energii, opłata mocowa i kompensacja mocy biernej – inż. Waldemar Nowak, Nakło nad Notecią.",
+   "image": "https://duzy00000.github.io/motoeksa-strona/img/og.png",
+   "logo": "https://duzy00000.github.io/motoeksa-strona/img/ikona.svg",
+   "url": "https://duzy00000.github.io/motoeksa-strona/",
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "Nakło nad Notecią"
+    },
+    {
+     "@type": "City",
+     "name": "Szubin"
+    },
+    {
+     "@type": "City",
+     "name": "Kcynia"
+    },
+    {
+     "@type": "City",
+     "name": "Mrocza"
+    },
+    {
+     "@type": "City",
+     "name": "Sadki"
+    },
+    {
+     "@type": "City",
+     "name": "Bydgoszcz"
+    },
+    {
+     "@type": "City",
+     "name": "Żnin"
+    },
+    {
+     "@type": "City",
+     "name": "Wyrzysk"
+    },
+    {
+     "@type": "City",
+     "name": "Piła"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "powiat nakielski"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "województwo kujawsko-pomorskie"
+    }
+   ],
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+     ],
+     "opens": "08:00",
+     "closes": "17:00"
+    }
+   ],
+   "makesOffer": [
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Okresowe przeglądy budynków (art. 62 Prawa budowlanego)"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Pomiary i protokoły instalacji elektrycznych"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Analiza zużycia i kosztów energii elektrycznej"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Monitoring fotowoltaiki i zużycia"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Automatyka i integracja budynku"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Kompensacja mocy biernej – indukcyjnej i pojemnościowej"
+     }
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "name": "Analiza zużycia i kosztów energii elektrycznej",
+   "serviceType": "Analiza kosztów energii",
+   "description": "Analiza faktur za prąd: dobór taryfy i mocy umownej, współczynnik AK opłaty mocowej z danych 15-minutowych, raport z możliwymi oszczędnościami.",
+   "provider": {
+    "@id": "https://duzy00000.github.io/motoeksa-strona/#firma"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "Nakło nad Notecią"
+    },
+    {
+     "@type": "City",
+     "name": "Szubin"
+    },
+    {
+     "@type": "City",
+     "name": "Kcynia"
+    },
+    {
+     "@type": "City",
+     "name": "Mrocza"
+    },
+    {
+     "@type": "City",
+     "name": "Sadki"
+    },
+    {
+     "@type": "City",
+     "name": "Bydgoszcz"
+    },
+    {
+     "@type": "City",
+     "name": "Żnin"
+    },
+    {
+     "@type": "City",
+     "name": "Wyrzysk"
+    },
+    {
+     "@type": "City",
+     "name": "Piła"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "powiat nakielski"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "województwo kujawsko-pomorskie"
+    }
+   ],
+   "url": "https://duzy00000.github.io/motoeksa-strona/oplata-mocowa-analiza-energii/"
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Co to jest współczynnik AK?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "To współczynnik, przez który mnoży się stawkę opłaty mocowej. Przyjmuje wartości 0,17, 0,50, 0,83 albo 1 – zależnie od tego, jak bardzo pobór w godzinach 7–22 doby roboczej przewyższa pobór w pozostałych godzinach. Wylicza się go osobno dla każdej doby roboczej."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Jak obniżyć opłatę mocową?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Spłaszczając profil zużycia w dni robocze, czyli przenosząc część poboru (np. ładowanie, podgrzewanie wody, chłodzenie z akumulacją) na godziny przed 7:00 i po 22:00. Symulacja w raporcie pokazuje, ile da konkretne przesunięcie."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Jakich danych potrzebuję do analizy?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Faktur za energię z ostatnich 12 miesięcy, a do analizy opłaty mocowej – danych 15-minutowych z urządzenia pomiarowego z tego samego okresu. Pomagam je pozyskać."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Czy analiza jest możliwa zdalnie?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tak. Analizę faktur i opłaty mocowej prowadzę zdalnie dla obiektów z całej Polski; na miejscu potrzebne są tylko pomiary, np. przy kompensacji mocy biernej."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Strona główna",
+     "item": "https://duzy00000.github.io/motoeksa-strona/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Analiza kosztów energii",
+     "item": "https://duzy00000.github.io/motoeksa-strona/oplata-mocowa-analiza-energii/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<div class="roboczy">Wersja robocza strony – treści do zatwierdzenia</div>
+
+<header class="naglowek">
+  <div class="kontener naglowek-wnetrze">
+    <a class="logo" href="../"><span class="logo-znak">M</span><span><b>MOTOEKSA</b><small>Biuro Usług Technicznych</small></span></a>
+    <nav class="menu" aria-label="Menu główne">
+      <a href="../">Strona główna</a>
+      <a href="../#uslugi">Usługi</a>
+      <a href="../#realizacje">Realizacje</a>
+      <a href="../#kontakt" class="menu-kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero hero-podstrona">
+  <div class="kontener">
+    <nav class="okruszki" aria-label="Ścieżka"><a href="../">Strona główna</a> › Analiza kosztów energii</nav>
+    <h1>Analiza zużycia i kosztów energii elektrycznej</h1>
+    <p class="hero-opis">Sprawdzam faktury za energię elektryczną i dane z urządzenia pomiarowego, żeby znaleźć oszczędności: w taryfie, mocy umownej, opłacie mocowej i energii biernej. Efektem jest raport PDF z wyliczonymi kwotami i konkretnymi zaleceniami.</p>
+    <div class="przyciski">
+      <a class="przycisk" href="tel:+48606951068">Zadzwoń: 606 951 068</a>
+      <a class="przycisk przycisk-jasny" href="../#kontakt">Zapytaj o wycenę</a>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja">
+  <div class="kontener tekst-sekcji">
+    <h2>Co analizuję</h2>
+
+    <ul>
+      <li>grupa taryfowa (G, C) i jej dopasowanie do profilu zużycia</li>
+      <li>moc umowna – czy nie jest za wysoka albo za niska</li>
+      <li>opłata mocowa i współczynnik AK – klasa K1–K4 każdej doby roboczej</li>
+      <li>energia bierna – czy i ile kosztuje</li>
+      <li>zużycie w strefach i godzinach – co da się przesunąć na tańsze godziny</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sekcja sekcja-tlo">
+  <div class="kontener tekst-sekcji">
+    <h2>Opłata mocowa i współczynnik AK</h2>
+    <p>Odbiorcy z mocą umowną powyżej 16 kW płacą opłatę mocową zależną od współczynnika AK. Zgodnie z art. 70a ustawy o rynku mocy wylicza się go dla każdej doby roboczej z porównania średniego poboru w godzinach 7–22 z poborem w pozostałych godzinach tej doby. Im bardziej płaski profil, tym niższa klasa i niższa opłata – od 17% do 100% stawki.</p>
+    <p>Z danych 15-minutowych z urządzenia pomiarowego wyliczam klasę AK każdej doby, pokazuję, które dni podnoszą opłatę, i symuluję, ile dałoby przesunięcie części poboru poza godziny 7–22.</p>
+  </div>
+</section>
+
+<section class="sekcja">
+  <div class="kontener tekst-sekcji">
+    <h2>Raport</h2>
+    <p>Raport PDF zawiera opis punktu poboru, kalendarz dób z klasami AK, zestawienie miesięczne, symulację oszczędności i podstawę prawną. Dla podmiotów z wieloma punktami poboru przygotowuję raport zbiorczy z możliwymi oszczędnościami rocznymi dla każdego obiektu.</p>
+  </div>
+</section>
+
+<section class="sekcja sekcja-tlo">
+  <div class="kontener tekst-sekcji">
+    <h2>Dla kogo</h2>
+    <p>Gminy i ich jednostki, szkoły, obiekty sportowe, firmy i zarządcy z kilkoma punktami poboru w taryfach C. Analizę prowadzę zdalnie – na podstawie faktur i danych z urządzenia pomiarowego – dla obiektów z całej Polski.</p>
+  </div>
+</section>
+
+<section class="sekcja">
+  <div class="kontener tekst-sekcji">
+    <p><a class="link-pdf" href="../pliki/przyklad-raport-ak-obiektu.pdf" target="_blank" rel="noopener">Zobacz przykładowy raport AK obiektu <small>(PDF, dane fikcyjne)</small></a></p>
+  </div>
+</section>
+
+<section class="sekcja sekcja-tlo" id="faq">
+  <div class="kontener tekst-sekcji">
+    <h2>Najczęstsze pytania</h2>
+    <div class="faq">
+      <details>
+        <summary>Co to jest współczynnik AK?</summary>
+        <p>To współczynnik, przez który mnoży się stawkę opłaty mocowej. Przyjmuje wartości 0,17, 0,50, 0,83 albo 1 – zależnie od tego, jak bardzo pobór w godzinach 7–22 doby roboczej przewyższa pobór w pozostałych godzinach. Wylicza się go osobno dla każdej doby roboczej.</p>
+      </details>
+      <details>
+        <summary>Jak obniżyć opłatę mocową?</summary>
+        <p>Spłaszczając profil zużycia w dni robocze, czyli przenosząc część poboru (np. ładowanie, podgrzewanie wody, chłodzenie z akumulacją) na godziny przed 7:00 i po 22:00. Symulacja w raporcie pokazuje, ile da konkretne przesunięcie.</p>
+      </details>
+      <details>
+        <summary>Jakich danych potrzebuję do analizy?</summary>
+        <p>Faktur za energię z ostatnich 12 miesięcy, a do analizy opłaty mocowej – danych 15-minutowych z urządzenia pomiarowego z tego samego okresu. Pomagam je pozyskać.</p>
+      </details>
+      <details>
+        <summary>Czy analiza jest możliwa zdalnie?</summary>
+        <p>Tak. Analizę faktur i opłaty mocowej prowadzę zdalnie dla obiektów z całej Polski; na miejscu potrzebne są tylko pomiary, np. przy kompensacji mocy biernej.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja">
+  <div class="kontener">
+    <h2>Inne usługi</h2>
+    <div class="inne-uslugi">
+      <a href="../przeglady-budynkow/">Przeglądy budynków →</a>
+      <a href="../pomiary-elektryczne/">Pomiary elektryczne →</a>
+      <a href="../kompensacja-mocy-biernej/">Kompensacja mocy biernej →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="stopka">
+  <div class="kontener">
+    <p>© 2026 Biuro Usług Technicznych „MOTOEKSA” · Waldemar Nowak · Nakło nad Notecią</p>
+    <p class="drobne stopka-uslugi"><a href="../przeglady-budynkow/">Przeglądy budynków</a> · <a href="../pomiary-elektryczne/">Pomiary elektryczne</a> · <a href="../kompensacja-mocy-biernej/">Kompensacja mocy biernej</a> · <a href="../oplata-mocowa-analiza-energii/">Analiza kosztów energii</a></p>
+    <p class="drobne"><a href="../polityka-prywatnosci.html">Polityka prywatności</a> · strona bez plików cookies i statystyk</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -9,9 +9,14 @@
 <link rel="canonical" href="https://duzy00000.github.io/motoeksa-strona/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="MOTOEKSA">
 <meta property="og:title" content="Przeglądy budynków i pomiary elektryczne Nakło | MOTOEKSA">
 <meta property="og:description" content="Okresowe przeglądy budynków, pomiary elektryczne, analizy zużycia energii, opłata mocowa i kompensacja mocy biernej – inż. Waldemar Nowak, Nakło nad Notecią.">
 <meta property="og:url" content="https://duzy00000.github.io/motoeksa-strona/">
+<meta property="og:image" content="https://duzy00000.github.io/motoeksa-strona/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b5cad">
 <link rel="icon" href="img/ikona.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styl.css">
@@ -22,69 +27,138 @@
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
- "@type": "ProfessionalService",
- "name": "Biuro Usług Technicznych „MOTOEKSA”",
- "alternateName": "MOTOEKSA",
- "founder": {
-  "@type": "Person",
-  "name": "Waldemar Nowak",
-  "honorificPrefix": "inż."
- },
- "address": {
-  "@type": "PostalAddress",
-  "streetAddress": "ul. Świętego Jana Pawła II 11",
-  "postalCode": "89-100",
-  "addressLocality": "Nakło nad Notecią",
-  "addressCountry": "PL"
- },
- "telephone": "+48606951068",
- "email": "motoeksa@gmail.com",
- "taxID": "5581062412",
- "description": "Okresowe przeglądy budynków, pomiary elektryczne, analizy zużycia energii, opłata mocowa i kompensacja mocy biernej – inż. Waldemar Nowak, Nakło nad Notecią.",
- "image": "https://duzy00000.github.io/motoeksa-strona/img/ikona.svg",
- "url": "https://duzy00000.github.io/motoeksa-strona/",
- "makesOffer": [
+ "@graph": [
   {
-   "@type": "Offer",
-   "itemOffered": {
-    "@type": "Service",
-    "name": "Okresowe przeglądy budynków (art. 62 Prawa budowlanego)"
-   }
-  },
-  {
-   "@type": "Offer",
-   "itemOffered": {
-    "@type": "Service",
-    "name": "Pomiary i protokoły instalacji elektrycznych"
-   }
-  },
-  {
-   "@type": "Offer",
-   "itemOffered": {
-    "@type": "Service",
-    "name": "Analiza zużycia i kosztów energii elektrycznej"
-   }
-  },
-  {
-   "@type": "Offer",
-   "itemOffered": {
-    "@type": "Service",
-    "name": "Monitoring fotowoltaiki i zużycia"
-   }
-  },
-  {
-   "@type": "Offer",
-   "itemOffered": {
-    "@type": "Service",
-    "name": "Automatyka i integracja budynku"
-   }
-  },
-  {
-   "@type": "Offer",
-   "itemOffered": {
-    "@type": "Service",
-    "name": "Kompensacja mocy biernej – indukcyjnej i pojemnościowej"
-   }
+   "@type": [
+    "ProfessionalService",
+    "Electrician"
+   ],
+   "@id": "https://duzy00000.github.io/motoeksa-strona/#firma",
+   "name": "Biuro Usług Technicznych „MOTOEKSA”",
+   "alternateName": "MOTOEKSA",
+   "founder": {
+    "@type": "Person",
+    "name": "Waldemar Nowak",
+    "honorificPrefix": "inż."
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Świętego Jana Pawła II 11",
+    "postalCode": "89-100",
+    "addressLocality": "Nakło nad Notecią",
+    "addressCountry": "PL"
+   },
+   "telephone": "+48606951068",
+   "email": "motoeksa@gmail.com",
+   "taxID": "5581062412",
+   "description": "Okresowe przeglądy budynków, pomiary elektryczne, analizy zużycia energii, opłata mocowa i kompensacja mocy biernej – inż. Waldemar Nowak, Nakło nad Notecią.",
+   "image": "https://duzy00000.github.io/motoeksa-strona/img/og.png",
+   "logo": "https://duzy00000.github.io/motoeksa-strona/img/ikona.svg",
+   "url": "https://duzy00000.github.io/motoeksa-strona/",
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "Nakło nad Notecią"
+    },
+    {
+     "@type": "City",
+     "name": "Szubin"
+    },
+    {
+     "@type": "City",
+     "name": "Kcynia"
+    },
+    {
+     "@type": "City",
+     "name": "Mrocza"
+    },
+    {
+     "@type": "City",
+     "name": "Sadki"
+    },
+    {
+     "@type": "City",
+     "name": "Bydgoszcz"
+    },
+    {
+     "@type": "City",
+     "name": "Żnin"
+    },
+    {
+     "@type": "City",
+     "name": "Wyrzysk"
+    },
+    {
+     "@type": "City",
+     "name": "Piła"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "powiat nakielski"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "województwo kujawsko-pomorskie"
+    }
+   ],
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+     ],
+     "opens": "08:00",
+     "closes": "17:00"
+    }
+   ],
+   "makesOffer": [
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Okresowe przeglądy budynków (art. 62 Prawa budowlanego)"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Pomiary i protokoły instalacji elektrycznych"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Analiza zużycia i kosztów energii elektrycznej"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Monitoring fotowoltaiki i zużycia"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Automatyka i integracja budynku"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Kompensacja mocy biernej – indukcyjnej i pojemnościowej"
+     }
+    }
+   ]
   }
  ]
 }
@@ -114,8 +188,8 @@
   <div class="kontener hero-wnetrze">
     <div>
       <p class="hero-etykieta">inż. Waldemar Nowak · Nakło nad Notecią</p>
-      <h1>Przeglądy budynków, pomiary elektryczne i&nbsp;analizy zużycia energii</h1>
-      <p class="hero-opis">Wykonuję okresowe kontrole stanu technicznego budynków, pomiary i protokoły instalacji elektrycznych, sprawdzam faktury za prąd i szukam oszczędności (taryfa, moc umowna, opłata mocowa, kompensacja mocy biernej), a także łączę urządzenia w budynku w jeden czytelny system z raportami.</p>
+      <h1>Przeglądy budynków i pomiary elektryczne – Nakło nad Notecią i&nbsp;Bydgoszcz</h1>
+      <p class="hero-opis">Wykonuję okresowe kontrole stanu technicznego budynków, pomiary i protokoły instalacji elektrycznych, analizy zużycia i kosztów energii (taryfa, moc umowna, opłata mocowa) oraz kompensację mocy biernej – dla zarządców, szkół, obiektów sportowych, gmin i firm.</p>
       <div class="przyciski">
         <a class="przycisk" href="tel:+48606951068">Zadzwoń: 606 951 068</a>
         <a class="przycisk przycisk-jasny" href="#uslugi">Zobacz usługi</a>
@@ -147,6 +221,7 @@
           <li>konstrukcja, dach, odwodnienie, kominy, elewacje, instalacje (gaz, C.O., odgromowa, kanalizacja)</li>
           <li>protokół w PDF ze zdjęciami, oceną stanu i zaleceniami z terminami usunięcia</li>
         </ul>
+        <a class="karta-link" href="przeglady-budynkow/">Więcej o tej usłudze →</a>
       </article>
 
       <article class="karta">
@@ -158,6 +233,7 @@
           <li>rezystancja uziemień</li>
           <li>protokoły z oceną, podzielone na pomieszczenia i obwody, w PDF i Excelu</li>
         </ul>
+        <a class="karta-link" href="pomiary-elektryczne/">Więcej o tej usłudze →</a>
       </article>
 
       <article class="karta">
@@ -169,6 +245,7 @@
           <li>raport z możliwymi oszczędnościami rocznymi przy obecnych stawkach</li>
           <li>kalkulator porównujący taryfy dla konkretnego obiektu</li>
         </ul>
+        <a class="karta-link" href="oplata-mocowa-analiza-energii/">Więcej o tej usłudze →</a>
       </article>
 
       <article class="karta">
@@ -204,6 +281,7 @@
           <li><b>Montaż i uruchomienie</b><span>podłączenie w rozdzielni, nastawy regulatora (docelowe tg&nbsp;φ, progi, czasy załączeń), pomiary po uruchomieniu</span></li>
           <li><b>Kontrola efektu</b><span>ponowna rejestracja analizatorem i sprawdzenie energii biernej na kolejnych fakturach, korekta nastaw, okresowe przeglądy układu</span></li>
         </ol>
+        <a class="karta-link" href="kompensacja-mocy-biernej/">Więcej o tej usłudze →</a>
       </article>
 
     </div>
@@ -365,14 +443,29 @@
       <p>Nazywam się <b>Waldemar Nowak</b>, jestem inżynierem i prowadzę Biuro Usług Technicznych „MOTOEKSA” w Nakle nad Notecią.</p>
       <p>Łączę przeglądy budynków i pomiary elektryczne z analizą danych: po kontroli zostaje czytelny protokół z oceną stanu i zaleceniami z terminami, a po odczytach – raport z liczbami, a nie tylko arkusz wyników. Rozwiązania buduję tak, żeby działały lokalnie, były tanie w utrzymaniu i nie zależały od jednej chmury producenta.</p>
       <ul class="lista-faktow">
-        <li><b>Uprawnienia:</b> <span class="do-uzupelnienia">do uzupełnienia (SEP E/D, grupy)</span></li>
-        <li><b>Teren działania:</b> <span class="do-uzupelnienia">do uzupełnienia (np. powiat nakielski i okolice)</span></li>
+        <li><b>Uprawnienia:</b> świadectwa kwalifikacyjne SEP (eksploatacja i dozór) oraz uprawnienia budowlane <span class="do-uzupelnienia">specjalność i numer uprawnień budowlanych</span></li>
+        <li><b>Dla kogo:</b> zarządcy nieruchomości, szkoły, obiekty sportowe, gminy i ich jednostki, wspólnoty mieszkaniowe, firmy</li>
+        <li><b>Teren działania:</b> powiat nakielski, Bydgoszcz i województwo kujawsko-pomorskie; analizy energii zdalnie w całej Polsce</li>
+        <li><b>Kontakt telefoniczny:</b> pn–pt 08:00–17:00</li>
       </ul>
     </div>
   </div>
 </section>
 
-<section id="kontakt" class="sekcja sekcja-tlo">
+<section id="obszar" class="sekcja sekcja-tlo">
+  <div class="kontener">
+    <h2>Obszar działania</h2>
+    <div class="obszar">
+      <div class="obszar-ikona" aria-hidden="true">⌖</div>
+      <div class="tekst-sekcji">
+      <p>Przeglądy budynków i pomiary elektryczne wykonuję na miejscu na terenie powiatu nakielskiego – w Nakle nad Notecią, Szubinie, Kcyni, Mroczy i Sadkach – a także w Bydgoszczy, Żninie, Wyrzysku, Pile i w całym województwie kujawsko-pomorskim.</p>
+      <p>Przeglądy wielu obiektów jednego zarządcy wykonuję również w innych powiatach, po uzgodnieniu terminu. Analizy zużycia energii, opłaty mocowej i faktur prowadzę zdalnie dla obiektów z całej Polski.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt" class="sekcja">
   <div class="kontener">
     <h2>Kontakt</h2>
     <div class="kontakt">
@@ -384,7 +477,7 @@
           <a href="mailto:motoeksa@gmail.com">motoeksa@gmail.com</a>
         </p>
         <p class="drobne">NIP 558-106-24-12 · REGON 092443846</p>
-        <p class="drobne"><span class="do-uzupelnienia">godziny kontaktu: do uzupełnienia</span></p>
+        <p class="drobne">Telefon: pn–pt 08:00–17:00</p>
       </div>
       <figure class="kontakt-qr">
         <img src="img/wizytowka-qr.svg" width="200" height="200" alt="Kod QR z wizytówką: inż. Waldemar Nowak, MOTOEKSA, tel. +48 606 951 068, motoeksa@gmail.com">
@@ -399,6 +492,7 @@
 <footer class="stopka">
   <div class="kontener">
     <p>© 2026 Biuro Usług Technicznych „MOTOEKSA” · Waldemar Nowak · Nakło nad Notecią</p>
+    <p class="drobne stopka-uslugi"><a href="przeglady-budynkow/">Przeglądy budynków</a> · <a href="pomiary-elektryczne/">Pomiary elektryczne</a> · <a href="kompensacja-mocy-biernej/">Kompensacja mocy biernej</a> · <a href="oplata-mocowa-analiza-energii/">Analiza kosztów energii</a></p>
     <p class="drobne"><a href="polityka-prywatnosci.html">Polityka prywatności</a> · strona bez plików cookies i statystyk</p>
   </div>
 </footer>

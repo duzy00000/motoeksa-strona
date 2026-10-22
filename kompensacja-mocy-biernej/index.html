@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kompensacja mocy biernej – analiza, dobór i uruchomienie</title>
+<meta name="description" content="Kompensacja mocy biernej indukcyjnej i pojemnościowej: analiza faktur, pomiary analizatorem sieci, dobór kondensatorów lub dławików i uruchomienie.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://duzy00000.github.io/motoeksa-strona/kompensacja-mocy-biernej/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="MOTOEKSA">
+<meta property="og:title" content="Kompensacja mocy biernej – analiza, dobór i uruchomienie">
+<meta property="og:description" content="Kompensacja mocy biernej indukcyjnej i pojemnościowej: analiza faktur, pomiary analizatorem sieci, dobór kondensatorów lub dławików i uruchomienie.">
+<meta property="og:url" content="https://duzy00000.github.io/motoeksa-strona/kompensacja-mocy-biernej/">
+<meta property="og:image" content="https://duzy00000.github.io/motoeksa-strona/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b5cad">
+<link rel="icon" href="../img/ikona.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styl.css">
+<style>
+:root { --akcent: #0b5cad; --akcent-ciemny: #08447f; --zolty: #f2b705; }
+
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": [
+    "ProfessionalService",
+    "Electrician"
+   ],
+   "@id": "https://duzy00000.github.io/motoeksa-strona/#firma",
+   "name": "Biuro Usług Technicznych „MOTOEKSA”",
+   "alternateName": "MOTOEKSA",
+   "founder": {
+    "@type": "Person",
+    "name": "Waldemar Nowak",
+    "honorificPrefix": "inż."
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Świętego Jana Pawła II 11",
+    "postalCode": "89-100",
+    "addressLocality": "Nakło nad Notecią",
+    "addressCountry": "PL"
+   },
+   "telephone": "+48606951068",
+   "email": "motoeksa@gmail.com",
+   "taxID": "5581062412",
+   "description": "Okresowe przeglądy budynków, pomiary elektryczne, analizy zużycia energii, opłata mocowa i kompensacja mocy biernej – inż. Waldemar Nowak, Nakło nad Notecią.",
+   "image": "https://duzy00000.github.io/motoeksa-strona/img/og.png",
+   "logo": "https://duzy00000.github.io/motoeksa-strona/img/ikona.svg",
+   "url": "https://duzy00000.github.io/motoeksa-strona/",
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "Nakło nad Notecią"
+    },
+    {
+     "@type": "City",
+     "name": "Szubin"
+    },
+    {
+     "@type": "City",
+     "name": "Kcynia"
+    },
+    {
+     "@type": "City",
+     "name": "Mrocza"
+    },
+    {
+     "@type": "City",
+     "name": "Sadki"
+    },
+    {
+     "@type": "City",
+     "name": "Bydgoszcz"
+    },
+    {
+     "@type": "City",
+     "name": "Żnin"
+    },
+    {
+     "@type": "City",
+     "name": "Wyrzysk"
+    },
+    {
+     "@type": "City",
+     "name": "Piła"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "powiat nakielski"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "województwo kujawsko-pomorskie"
+    }
+   ],
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+     ],
+     "opens": "08:00",
+     "closes": "17:00"
+    }
+   ],
+   "makesOffer": [
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Okresowe przeglądy budynków (art. 62 Prawa budowlanego)"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Pomiary i protokoły instalacji elektrycznych"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Analiza zużycia i kosztów energii elektrycznej"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Monitoring fotowoltaiki i zużycia"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Automatyka i integracja budynku"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Kompensacja mocy biernej – indukcyjnej i pojemnościowej"
+     }
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "name": "Kompensacja mocy biernej indukcyjnej i pojemnościowej",
+   "serviceType": "Kompensacja mocy biernej",
+   "description": "Kompensacja mocy biernej indukcyjnej i pojemnościowej: analiza faktur, pomiary analizatorem sieci, dobór kondensatorów lub dławików i uruchomienie.",
+   "provider": {
+    "@id": "https://duzy00000.github.io/motoeksa-strona/#firma"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "Nakło nad Notecią"
+    },
+    {
+     "@type": "City",
+     "name": "Szubin"
+    },
+    {
+     "@type": "City",
+     "name": "Kcynia"
+    },
+    {
+     "@type": "City",
+     "name": "Mrocza"
+    },
+    {
+     "@type": "City",
+     "name": "Sadki"
+    },
+    {
+     "@type": "City",
+     "name": "Bydgoszcz"
+    },
+    {
+     "@type": "City",
+     "name": "Żnin"
+    },
+    {
+     "@type": "City",
+     "name": "Wyrzysk"
+    },
+    {
+     "@type": "City",
+     "name": "Piła"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "powiat nakielski"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "województwo kujawsko-pomorskie"
+    }
+   ],
+   "url": "https://duzy00000.github.io/motoeksa-strona/kompensacja-mocy-biernej/"
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Jak sprawdzić, czy płacę za energię bierną?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Na fakturze za dystrybucję energii poszukaj pozycji dotyczącej energii biernej – indukcyjnej lub pojemnościowej. Mogę przejrzeć faktury z ostatnich miesięcy i policzyć, ile ta opłata kosztuje rocznie."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Kiedy opłaca się kompensacja mocy biernej?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Gdy opłaty za energię bierną powtarzają się co miesiąc. Koszt układu porównuję z rocznymi opłatami z faktur – wynik zależy od konkretnego obiektu, dlatego liczę go przed doborem urządzeń."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Czym różni się kompensacja indukcyjna od pojemnościowej?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Mocy biernej indukcyjnej przeciwdziała się kondensatorami, a pojemnościowej – dławikami. W wielu obiektach w dzień przeważa jedna, a w nocy druga; wtedy potrzebny jest układ mieszany sterowany regulatorem."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Czy bateria kondensatorów wystarczy przy oświetleniu LED?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Często nie – oświetlenie LED i zasilacze impulsowe wytwarzają moc pojemnościową, którą kondensatory jeszcze zwiększają. Dlatego zaczynam od rejestracji analizatorem sieci i dobieram układ do rzeczywistego profilu obiektu."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Strona główna",
+     "item": "https://duzy00000.github.io/motoeksa-strona/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Kompensacja mocy biernej",
+     "item": "https://duzy00000.github.io/motoeksa-strona/kompensacja-mocy-biernej/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<div class="roboczy">Wersja robocza strony – treści do zatwierdzenia</div>
+
+<header class="naglowek">
+  <div class="kontener naglowek-wnetrze">
+    <a class="logo" href="../"><span class="logo-znak">M</span><span><b>MOTOEKSA</b><small>Biuro Usług Technicznych</small></span></a>
+    <nav class="menu" aria-label="Menu główne">
+      <a href="../">Strona główna</a>
+      <a href="../#uslugi">Usługi</a>
+      <a href="../#realizacje">Realizacje</a>
+      <a href="../#kontakt" class="menu-kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero hero-podstrona">
+  <div class="kontener">
+    <nav class="okruszki" aria-label="Ścieżka"><a href="../">Strona główna</a> › Kompensacja mocy biernej</nav>
+    <h1>Kompensacja mocy biernej indukcyjnej i pojemnościowej</h1>
+    <p class="hero-opis">Opłaty za energię bierną potrafią być wyraźną pozycją na fakturze za prąd. Prowadzę kompensację od analizy faktur i pomiarów analizatorem sieci, przez dobór układu, po jego uruchomienie i kontrolę efektu na kolejnych fakturach.</p>
+    <div class="przyciski">
+      <a class="przycisk" href="tel:+48606951068">Zadzwoń: 606 951 068</a>
+      <a class="przycisk przycisk-jasny" href="../#kontakt">Zapytaj o wycenę</a>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja">
+  <div class="kontener tekst-sekcji">
+    <h2>Skąd biorą się opłaty za energię bierną</h2>
+    <p>Moc bierna indukcyjna pochodzi głównie z silników, transformatorów i starszych źródeł światła. Opłatę nalicza się za nią, gdy współczynnik tg&nbsp;φ przekracza wartość określoną w umowie.</p>
+    <p>Moc bierna pojemnościowa pojawia się coraz częściej: przy oświetleniu LED, zasilaczach impulsowych, UPS-ach, długich liniach kablowych oraz gdy obiekt pracuje z małym obciążeniem nocą lub w weekendy. Za energię bierną pojemnościową opłata bywa naliczana od każdej kilowarogodziny, więc nawet niewielki obiekt może za nią płacić co miesiąc.</p>
+  </div>
+</section>
+
+<section class="sekcja sekcja-tlo">
+  <div class="kontener tekst-sekcji">
+    <h2>Jak prowadzę kompensację</h2>
+
+    <ul>
+      <li><b>Analiza faktur</b> – energia bierna indukcyjna i pojemnościowa, tg&nbsp;φ i opłaty w kolejnych okresach rozliczeniowych; ile kosztuje to dziś</li>
+      <li><b>Pomiary analizatorem sieci</b> – analizator podłączony w rozdzielni rejestruje moc czynną i bierną, tg&nbsp;φ i wyższe harmoniczne; z rejestracji widać, kiedy i skąd pojawia się moc bierna</li>
+      <li><b>Dobór układu</b> – rodzaj i moc urządzeń, stopnie regulacji, ochrona przed harmonicznymi</li>
+      <li><b>Montaż i uruchomienie</b> – podłączenie w rozdzielni, nastawy regulatora (docelowe tg&nbsp;φ, progi, czasy załączeń), pomiary po uruchomieniu</li>
+      <li><b>Kontrola efektu</b> – ponowna rejestracja analizatorem i sprawdzenie energii biernej na kolejnych fakturach, korekta nastaw, okresowe przeglądy układu</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sekcja">
+  <div class="kontener tekst-sekcji">
+    <h2>Jakie układy stosuję</h2>
+
+    <ul>
+      <li>baterie kondensatorów z regulatorem mocy biernej – do kompensacji mocy indukcyjnej</li>
+      <li>dławiki kompensacyjne – do kompensacji mocy pojemnościowej</li>
+      <li>układy mieszane (kondensatory i dławiki) dla obiektów, w których charakter obciążenia zmienia się w ciągu doby</li>
+      <li>kompensatory statyczne (aktywne) przy szybkozmiennych obciążeniach</li>
+      <li>dławiki ochronne przy wyższych harmonicznych</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sekcja sekcja-tlo">
+  <div class="kontener tekst-sekcji">
+    <h2>Dla kogo</h2>
+    <p>Zakłady i warsztaty, obiekty sportowe i baseny, szkoły, budynki biurowe, oczyszczalnie i przepompownie, obiekty z dużą liczbą opraw LED lub serwerownią – wszędzie tam, gdzie na fakturze pojawia się pozycja za energię bierną.</p>
+  </div>
+</section>
+
+<section class="sekcja sekcja-tlo" id="faq">
+  <div class="kontener tekst-sekcji">
+    <h2>Najczęstsze pytania</h2>
+    <div class="faq">
+      <details>
+        <summary>Jak sprawdzić, czy płacę za energię bierną?</summary>
+        <p>Na fakturze za dystrybucję energii poszukaj pozycji dotyczącej energii biernej – indukcyjnej lub pojemnościowej. Mogę przejrzeć faktury z ostatnich miesięcy i policzyć, ile ta opłata kosztuje rocznie.</p>
+      </details>
+      <details>
+        <summary>Kiedy opłaca się kompensacja mocy biernej?</summary>
+        <p>Gdy opłaty za energię bierną powtarzają się co miesiąc. Koszt układu porównuję z rocznymi opłatami z faktur – wynik zależy od konkretnego obiektu, dlatego liczę go przed doborem urządzeń.</p>
+      </details>
+      <details>
+        <summary>Czym różni się kompensacja indukcyjna od pojemnościowej?</summary>
+        <p>Mocy biernej indukcyjnej przeciwdziała się kondensatorami, a pojemnościowej – dławikami. W wielu obiektach w dzień przeważa jedna, a w nocy druga; wtedy potrzebny jest układ mieszany sterowany regulatorem.</p>
+      </details>
+      <details>
+        <summary>Czy bateria kondensatorów wystarczy przy oświetleniu LED?</summary>
+        <p>Często nie – oświetlenie LED i zasilacze impulsowe wytwarzają moc pojemnościową, którą kondensatory jeszcze zwiększają. Dlatego zaczynam od rejestracji analizatorem sieci i dobieram układ do rzeczywistego profilu obiektu.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja">
+  <div class="kontener">
+    <h2>Inne usługi</h2>
+    <div class="inne-uslugi">
+      <a href="../przeglady-budynkow/">Przeglądy budynków →</a>
+      <a href="../pomiary-elektryczne/">Pomiary elektryczne →</a>
+      <a href="../oplata-mocowa-analiza-energii/">Analiza kosztów energii →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="stopka">
+  <div class="kontener">
+    <p>© 2026 Biuro Usług Technicznych „MOTOEKSA” · Waldemar Nowak · Nakło nad Notecią</p>
+    <p class="drobne stopka-uslugi"><a href="../przeglady-budynkow/">Przeglądy budynków</a> · <a href="../pomiary-elektryczne/">Pomiary elektryczne</a> · <a href="../kompensacja-mocy-biernej/">Kompensacja mocy biernej</a> · <a href="../oplata-mocowa-analiza-energii/">Analiza kosztów energii</a></p>
+    <p class="drobne"><a href="../polityka-prywatnosci.html">Polityka prywatności</a> · strona bez plików cookies i statystyk</p>
+  </div>
+</footer>
+
+</body>
+</html>
